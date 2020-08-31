@@ -24,7 +24,7 @@ const getRemainingDaysOfTrip = () => {
 async function formHandler() {
   const city = document.getElementById('destination').value;
   // getting the lat and lang for the input city value
-  await fetch(`http://localhost:1156/getLatLang?city=${city}`, {
+  await fetch(`http://localhost:8080/getLatLang?city=${city}`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json;charset=utf-8'
@@ -35,7 +35,7 @@ async function formHandler() {
     UIdata.country = res.countryName;
     UIdata.city = res.name;
     UIdata.population = res.population;
-    await getWeather(`http://localhost:1156/getWeather?lat=${res.lat}&long=${res.lng}`)
+    await getWeather(`http://localhost:8080/getWeather?lat=${res.lat}&long=${res.lng}`)
   })
   .catch(err => {
     console.log(err)
@@ -54,7 +54,7 @@ const getWeather = async (url) => {
   .then(async res => {
     UIdata.temperature = res.data[0].temp;
     UIdata.weatherDesc = res.data[0].weather.description;
-    await getPics(`http://localhost:1156/getPics?q=${UIdata.city}`)
+    await getPics(`http://localhost:8080/getPics?q=${UIdata.city}`)
   })
   .catch(err => {
     console.log(err)

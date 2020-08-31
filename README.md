@@ -19,7 +19,7 @@ To run the project on the development webpack server, open the terminal in the r
 ```
 npm run build-dev
 ```
-Now visit your localhost on port number 1155 in the browser to run the application.
+Now visit your localhost on port number 8080 in the browser to run the application.
 
 ### Prerequisites
 

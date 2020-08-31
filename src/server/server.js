@@ -64,8 +64,8 @@ app.get('/getPics', (req, res) => {
 })
 
 // to set the server up at the defined port
-app.listen(1155, () => {
-  console.log('Server up on port 1155');
+app.listen(8080, () => {
+  console.log('Server is running on port 8080');
 });
 
 
