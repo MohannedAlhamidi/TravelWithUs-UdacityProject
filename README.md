@@ -1,14 +1,9 @@
-# TravelOne App
+# Travel with Us - App
 
 This is the Capstone project of the Udacity Frontend Nanodegree. It is a Traveller app which gives information about the destination you want to travel and help you plan your trip better.
 
 ## Getting Started
 
-To run the project on the development webpack server, open the terminal in the root directory and run the command
-
-```
-npm run build-dev
-```
 
 To run the project on the production server, open terminal in the root directory and run the command
 
@@ -19,8 +14,12 @@ After that,
 ```
 npm run start
 ```
+To run the project on the development webpack server, open the terminal in the root directory and run the command
 
-Now visit your localhost on port number 8081 in the browser to run the application.
+```
+npm run build-dev
+```
+Now visit your localhost on port number 1155 in the browser to run the application.
 
 ### Prerequisites
 
