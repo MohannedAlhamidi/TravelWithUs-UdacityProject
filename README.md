@@ -1,4 +1,4 @@
-# Travel with Us - App
+# Travel with Us - project
 
 This is the Capstone project of the Udacity Frontend Nanodegree. It is a Traveller app which gives information about the destination you want to travel and help you plan your trip better.
 
